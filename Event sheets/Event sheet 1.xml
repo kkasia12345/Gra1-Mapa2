@@ -2,5 +2,278 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <event-block sid="646898130188128">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="466741839971489" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="748165609937001" type="wieza1">
+                    <param id="0" name="Object">czolg1</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="804830098489913" type="wieza2">
+                    <param id="0" name="Object">czolg2</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-3" name="Set position" sid="397159097096389" type="kamera">
+                    <param id="0" name="X">(czolg1.X + czolg2.X)/2</param>
+                    <param id="1" name="Y">(czolg1.Y + czolg2.Y)/2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="320018849607586">
+            <conditions>
+                <condition id="2" name="Key is down" sid="169684031281973" type="Keyboard">
+                    <param id="0" name="Key">191 (/)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Rotate clockwise" sid="553580901954801" type="wieza1">
+                    <param id="0" name="Degrees">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="480033669741938">
+            <conditions>
+                <condition id="2" name="Key is down" sid="161776720329884" type="Keyboard">
+                    <param id="0" name="Key">188 (,)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-19" name="Rotate counter-clockwise" sid="853285800799210" type="wieza1">
+                    <param id="0" name="Degrees">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="434429126585725">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="419127176482252" type="Keyboard">
+                    <param id="0" name="Key">190 (.)</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="900484436334723" type="wieza1">
+                    <param id="0" name="Instance variable">reload</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="215275141477351" type="wieza1">
+                    <param id="0" name="Object">Sprite3</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-8" name="Set angle" sid="947397404083608" type="Sprite3">
+                    <param id="0" name="Angle">wieza1.Angle</param>
+                </action>
+                <action id="-10" name="Set value" sid="886162218346482" type="wieza1">
+                    <param id="0" name="Instance variable">reload</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="382505676743229">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="479941850595124" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="742884380782431" type="wieza1">
+                    <param id="0" name="Instance variable">reload</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="396244385238911" type="wieza1">
+                    <param id="0" name="Instance variable">reload</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="625975666930093">
+            <conditions>
+                <condition id="2" name="Key is down" sid="894668968149668" type="Keyboard">
+                    <param id="0" name="Key">97 (Num 1)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Car" id="7" name="Simulate control" sid="505466225339452" type="czolg1">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="970760029223439">
+            <conditions>
+                <condition id="2" name="Key is down" sid="946572775586225" type="Keyboard">
+                    <param id="0" name="Key">99 (Num 3)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Car" id="7" name="Simulate control" sid="412162794638611" type="czolg1">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="602451831505761">
+            <conditions>
+                <condition id="2" name="Key is down" sid="630943678226289" type="Keyboard">
+                    <param id="0" name="Key">101 (Num 5)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Car" id="7" name="Simulate control" sid="835166625420653" type="czolg1">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="191615771465679">
+            <conditions>
+                <condition id="2" name="Key is down" sid="548970580462863" type="Keyboard">
+                    <param id="0" name="Key">98 (Num 2)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Car" id="7" name="Simulate control" sid="843298635676888" type="czolg1">
+                    <param id="0" name="Control">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="848097856411949">
+            <conditions>
+                <condition id="2" name="Key is down" sid="305998267072739" type="Keyboard">
+                    <param id="0" name="Key">66 (B)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Rotate clockwise" sid="815335536105954" type="wieza2">
+                    <param id="0" name="Degrees">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="691171789939725">
+            <conditions>
+                <condition id="2" name="Key is down" sid="378346873201743" type="Keyboard">
+                    <param id="0" name="Key">67 (C)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-19" name="Rotate counter-clockwise" sid="661876063879486" type="wieza2">
+                    <param id="0" name="Degrees">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="645332948898614">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="843248896608403" type="Keyboard">
+                    <param id="0" name="Key">86 (V)</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="819031819306626" type="wieza2">
+                    <param id="0" name="Instance variable">reload</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="759186904659694" type="wieza2">
+                    <param id="0" name="Object">Sprite3</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-8" name="Set angle" sid="906224744935048" type="Sprite3">
+                    <param id="0" name="Angle">wieza2.Angle</param>
+                </action>
+                <action id="-10" name="Set value" sid="106788294314157" type="wieza2">
+                    <param id="0" name="Instance variable">reload</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="321992738820416">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="254487720282130" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="981340953114270" type="wieza2">
+                    <param id="0" name="Instance variable">reload</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="435374872231721" type="wieza2">
+                    <param id="0" name="Instance variable">reload</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="769560293626023">
+            <conditions>
+                <condition id="2" name="Key is down" sid="829244963767335" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Car" id="7" name="Simulate control" sid="508563821116105" type="czolg2">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="787020070713821">
+            <conditions>
+                <condition id="2" name="Key is down" sid="225582232339898" type="Keyboard">
+                    <param id="0" name="Key">68 (D)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Car" id="7" name="Simulate control" sid="832114722139166" type="czolg2">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="570821464360560">
+            <conditions>
+                <condition id="2" name="Key is down" sid="225139096914917" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Car" id="7" name="Simulate control" sid="461835142858088" type="czolg2">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="914260892361557">
+            <conditions>
+                <condition id="2" name="Key is down" sid="157794869396057" type="Keyboard">
+                    <param id="0" name="Key">83 (S)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Car" id="7" name="Simulate control" sid="856383852412289" type="czolg2">
+                    <param id="0" name="Control">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="829024187086800">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="943320571254635" type="Sprite3">
+                    <param id="0" name="Object">Sprite6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="125795568379714" type="Sprite3" />
+            </actions>
+        </event-block>
+        <event-block sid="762775549192355">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="763338807535076" type="Sprite3">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="501523738977381" type="Sprite3" />
+                <action id="-9" name="Destroy" sid="990239352484797" type="Sprite5" />
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

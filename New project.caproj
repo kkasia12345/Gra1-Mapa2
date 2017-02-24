@@ -9,8 +9,17 @@
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>34gzyun2o27u8</unique-id>
     <saved-with-version>23900</saved-with-version>
-    <used-plugins />
-    <used-behaviors />
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Car" version="1">Car</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -37,7 +46,314 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder />
+    <object-folder>
+        <object-type name="czolg1" sid="491603016857936">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Car" sid="282236830284281">
+                    <behavior id="Car" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="684527498136788">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="574125148643582" speed="5">
+                    <frame duration="1" hotspotX="0.461538" hotspotY="0.5" original-source="C:\Users\Milo5000\Downloads\super-satan-machine-2x\super-satan-machine-2x\tank-blue_bottom.png">
+                        <collision-poly>
+                            <point x="0.928571" y="0.875" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.0357143" y="0.9375" />
+                            <point x="0.0714286" y="0.5" />
+                            <point x="0.0357143" y="0.0625" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.928571" y="0.125" />
+                            <point x="0.892857" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="wieza1" sid="292021069035020">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="reload" sid="213773421253578" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="546104296927687" speed="5">
+                    <frame duration="1" hotspotX="0.238095" hotspotY="0.5" original-source="C:\Users\Milo5000\Downloads\super-satan-machine-2x\super-satan-machine-2x\tank-blue_top.png">
+                        <image-point name="Imagepoint 1" x="0.952381" y="0.5" />
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="158195952967695">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Sprite3" sid="441004083009947">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="930468327496318">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="543488514261395" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Milo5000\Downloads\super-satan-machine-2x\super-satan-machine-2x\bullet.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="610879088508095">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="308548489976410" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="118585557842321">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293733641383964" speed="5">
+                    <frame duration="1" hotspotX="0.452381" hotspotY="0.142857" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="126736295622500">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="440949273362591">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="932221428701738" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="droga" sid="719540073857012">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="675816993559813" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505747" original-source="C:\Users\Milo5000\Desktop\grafiki\double_road.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="523959445900430">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Car" sid="653898498432913">
+                    <behavior id="Car" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="407106551201271">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="202007936373979">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="200508787998810" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Milo5000\Desktop\grafiki\tank-blue_bottom.png">
+                        <collision-poly>
+                            <point x="0.961538" y="0.928571" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0384616" y="0.5" />
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.961538" y="0.0714286" />
+                            <point x="0.923077" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="105602606892186">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Car" sid="782474392480772">
+                    <behavior id="Car" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="212725380974645">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="687829006669654">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="781681224048708" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Milo5000\Desktop\grafiki\tank-blue_bottom.png">
+                        <collision-poly>
+                            <point x="0.961538" y="0.928571" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0384616" y="0.5" />
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.961538" y="0.0714286" />
+                            <point x="0.923077" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite10" sid="655943577184666">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Car" sid="373413645618920">
+                    <behavior id="Car" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="454669408367631">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="766209690163941">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="133494270874773" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Milo5000\Desktop\grafiki\tank-blue_bottom.png">
+                        <collision-poly>
+                            <point x="0.961538" y="0.928571" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0384616" y="0.5" />
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.961538" y="0.0714286" />
+                            <point x="0.923077" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite11" sid="444914958792896">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Car" sid="574772783228207">
+                    <behavior id="Car" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="315791737700224">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="829239413938831">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="337521933503083" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Milo5000\Desktop\grafiki\tank-blue_bottom.png">
+                        <collision-poly>
+                            <point x="0.961538" y="0.928571" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0384616" y="0.5" />
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.961538" y="0.0714286" />
+                            <point x="0.923077" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="czolg2" sid="822965244445420">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="614501714597813">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Car" sid="257638000685263">
+                    <behavior id="Car" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="913711966742602" speed="5">
+                    <frame duration="1" hotspotX="0.442308" hotspotY="0.5" original-source="C:\Users\Milo5000\Downloads\super-satan-machine-2x\super-satan-machine-2x\tank-red_bottom.png">
+                        <collision-poly>
+                            <point x="0.0384616" y="0.0714286" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.961538" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0384616" y="0.928571" />
+                            <point x="0.0769231" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="wieza2" sid="825073044856430">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="reload" sid="971691257942223" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="698686443569272" speed="5">
+                    <frame duration="1" hotspotX="0.238095" hotspotY="0.5" original-source="C:\Users\Milo5000\Downloads\super-satan-machine-2x\super-satan-machine-2x\tank-red_top.png">
+                        <image-point name="Imagepoint 1" x="0.952381" y="0.5" />
+                        <collision-poly>
+                            <point x="0.142857" y="0.375" />
+                            <point x="0.47619" y="0.375" />
+                            <point x="0.952381" y="0.125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.952381" y="0.875" />
+                            <point x="0.47619" y="0.625" />
+                            <point x="0.142857" y="0.625" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="zakret" sid="904476491026759">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="703366222575597" speed="5">
+                    <frame duration="1" hotspotX="0.330827" hotspotY="0.38983" original-source="C:\Users\Milo5000\Desktop\grafiki\turn_road.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.5" />
+                            <point x="0.496241" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="404968082378926">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="296396541352856" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kamera" sid="787808410313794">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="981755324324179">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="797373051115303" speed="5">
+                    <frame duration="1" hotspotX="0.666667" hotspotY="0.333333" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
@@ -45,7 +361,9 @@
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Keyboard" uid="2" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>
